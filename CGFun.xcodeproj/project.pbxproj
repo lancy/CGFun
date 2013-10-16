@@ -21,6 +21,10 @@
 		BF3897C0180D1A2D003C0474 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3897A2180D1A2C003C0474 /* UIKit.framework */; };
 		BF3897C8180D1A2D003C0474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF3897C6180D1A2D003C0474 /* InfoPlist.strings */; };
 		BF3897CA180D1A2D003C0474 /* CGFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3897C9180D1A2D003C0474 /* CGFunTests.m */; };
+		BF9F909B180D74EF0040109F /* CYImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB8535C180D257D00899853 /* CYImageManager.m */; };
+		BF9F909E180DB06C0040109F /* UIImageView+GeometryConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F909D180DB06C0040109F /* UIImageView+GeometryConversion.m */; };
+		BF9F909F180DC4D50040109F /* UIImageView+GeometryConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F909D180DB06C0040109F /* UIImageView+GeometryConversion.m */; };
+		BFB8535D180D257D00899853 /* CYImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB8535C180D257D00899853 /* CYImageManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		BF3897C5180D1A2D003C0474 /* CGFunTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CGFunTests-Info.plist"; sourceTree = "<group>"; };
 		BF3897C7180D1A2D003C0474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF3897C9180D1A2D003C0474 /* CGFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGFunTests.m; sourceTree = "<group>"; };
+		BF9F909C180DB06C0040109F /* UIImageView+GeometryConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GeometryConversion.h"; sourceTree = "<group>"; };
+		BF9F909D180DB06C0040109F /* UIImageView+GeometryConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GeometryConversion.m"; sourceTree = "<group>"; };
+		BFB8535B180D257D00899853 /* CYImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYImageManager.h; sourceTree = "<group>"; };
+		BFB8535C180D257D00899853 /* CYImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYImageManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +120,15 @@
 		BF3897A4180D1A2C003C0474 /* CGFun */ = {
 			isa = PBXGroup;
 			children = (
+				BF9F909C180DB06C0040109F /* UIImageView+GeometryConversion.h */,
+				BF9F909D180DB06C0040109F /* UIImageView+GeometryConversion.m */,
 				BF3897AD180D1A2C003C0474 /* CYAppDelegate.h */,
 				BF3897AE180D1A2C003C0474 /* CYAppDelegate.m */,
 				BF3897B0180D1A2C003C0474 /* Main.storyboard */,
 				BF3897B3180D1A2C003C0474 /* CYViewController.h */,
 				BF3897B4180D1A2C003C0474 /* CYViewController.m */,
+				BFB8535B180D257D00899853 /* CYImageManager.h */,
+				BFB8535C180D257D00899853 /* CYImageManager.m */,
 				BF3897B6180D1A2C003C0474 /* Images.xcassets */,
 				BF3897A5180D1A2C003C0474 /* Supporting Files */,
 			);
@@ -251,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF3897AF180D1A2C003C0474 /* CYAppDelegate.m in Sources */,
+				BF9F909E180DB06C0040109F /* UIImageView+GeometryConversion.m in Sources */,
+				BFB8535D180D257D00899853 /* CYImageManager.m in Sources */,
 				BF3897AB180D1A2C003C0474 /* main.m in Sources */,
 				BF3897B5180D1A2C003C0474 /* CYViewController.m in Sources */,
 			);
@@ -260,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9F909F180DC4D50040109F /* UIImageView+GeometryConversion.m in Sources */,
 				BF3897CA180D1A2D003C0474 /* CGFunTests.m in Sources */,
+				BF9F909B180D74EF0040109F /* CYImageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +477,7 @@
 				BF3897CF180D1A2D003C0474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF3897D0180D1A2D003C0474 /* Build configuration list for PBXNativeTarget "CGFunTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +486,7 @@
 				BF3897D2180D1A2D003C0474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
